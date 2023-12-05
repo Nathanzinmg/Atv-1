@@ -1,0 +1,518 @@
+1-questão
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exemplo de Mensagem</title>
+</head>
+
+<body>
+    <h1>hello world</h1>
+</body>
+
+</html>
+
+2-questão 
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Soma de dois números inteiros</title>
+    </head>
+    <body>
+        <h1>Calculadora de soma de 2 números inteiros</h1>
+        <form>
+            <label for="num1">Digite o primeiro número:</label>
+            <input type="number" id="num1" name="num1">
+            <label for="num2">Digite o segundo número:</label>
+            <input type="number" id="num2" name="num2">
+            <input type="submit" value="Calcular" onclick="calculateSum()">
+        </form>
+
+        <p id="result"></p>
+
+        <script>
+            function calculateSum() {
+                let num1 = parseInt(document.getElementById('num1').value);
+                let num2 = parseInt(document.getElementById('num2').value);
+                let sum = num1 + num2;
+                document.getElementById('result').innerText = "A soma dos números é: " + sum;
+            }
+        </script>
+    </body>
+</html>
+
+3-questão
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Operações com dois números inteiros</title>
+    </head>
+    <body>
+        <h1>Operações com dois números inteiros</h1>
+        <form>
+            <label for="num1">Digite o primeiro número:</label>
+            <input type="number" id="num1" name="num1">
+            <label for="num2">Digite o segundo número:</label>
+            <input type="number" id="num2" name="num2">
+            <input type="submit" value="Calcular" onclick="calculateOperations()">
+        </form>
+
+        <p id="result"></p>
+
+        <script>
+            function calculateOperations() {
+                let num1 = parseInt(document.getElementById('num1').value);
+                let num2 = parseInt(document.getElementById('num2').value);
+                let sum = num1 + num2;
+                let subtraction = num1 - num2;
+                let multiplication = num1 * num2;
+                document.getElementById('result').innerText = "Soma: " + sum + ", Subtração: " + subtraction + ", Multiplicação: " + multiplication;
+            }
+        </script>
+    </body>
+</html>
+
+
+4-questão 
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Operações com três números inteiros</title>
+    </head>
+    <body>
+        <h1>Operações com três números inteiros</h1>
+        <form>
+            <label for="num1">Digite o primeiro número:</label>
+            <input type="number" id="num1" name="num1">
+            <label for="num2">Digite o segundo número:</label>
+            <input type="number" id="num2" name="num2">
+            <label for="num3">Digite o terceiro número:</label>
+            <input type="number" id="num3" name="num3">
+            <input type="submit" value="Calcular" onclick="calculateOperations()">
+        </form>
+
+        <p id="result"></p>
+
+        <script>
+            function calculateOperations() {
+                let num1 = parseInt(document.getElementById('num1').value);
+                let num2 = parseInt(document.getElementById('num2').value);
+                let num3 = parseInt(document.getElementById('num3').value);
+                let sum = num1 + num2 + num3;
+                let subtraction = num1 - num2 - num3;
+                let multiplication = num1 * num2 * num3;
+                document.getElementById('result').innerText = "Soma: " + sum + ", Subtração: " + subtraction + ", Multiplicação: " + multiplication;
+            }
+        </script>
+    </body>
+</html>
+
+
+5-questão
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Operações com dois números reais</title>
+    </head>
+    <body>
+        <h1>Operações com dois números reais</h1>
+        <form>
+            <label for="num1">Digite o primeiro número:</label>
+            <input type="number" step="0.01" id="num1" name="num1">
+            <label for="num2">Digite o segundo número:</label>
+            <input type="number" step="0.01" id="num2" name="num2">
+            <input type="submit" value="Calcular" onclick="calculateOperations()">
+        </form>
+
+        <p id="result"></p>
+
+        <script>
+            function calculateOperations() {
+                let num1 = parseFloat(document.getElementById('num1').value);
+                let num2 = parseFloat(document.getElementById('num2').value);
+                let sum = num1 + num2;
+                let subtraction = num1 - num2;
+                let multiplication = num1 * num2;
+                document.getElementById('result').innerText = "Soma: " + sum + ", Subtração: " + subtraction + ", Multiplicação: " + multiplication;
+            }
+        </script>
+    </body>
+</html>
+```
+
+6-questão 
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Divisão de dois números reais</title>
+    </head>
+    <body>
+        <h1>Divisão de dois números reais</h1>
+        <form>
+            <label for="num1">Digite o dividendo:</label>
+            <input type="number" step="0.01" id="num1" name="num1">
+            <label for="num2">Digite o divisor:</label>
+            <input type="number" step="0.01" id="num2" name="num2">
+            <input type="submit" value="Calcular" onclick="calculateDivision()">
+        </form>
+
+        <p id="result"></p>
+
+        <script>
+            function calculateDivision() {
+                let num1 = parseFloat(document.getElementById('num1').value);
+                let num2 = parseFloat(document.getElementById('num2').value);
+                let division = num1 / num2;
+                document.getElementById('result').innerText = "Resultado da divisão: " + division;
+            }
+        </script>
+    </body>
+</html>
+
+
+7-Questão:
+
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Operações com 3 números reais</title>
+</head>
+<body>
+  <h2>Operações com 3 números reais</h2>
+  <label for="numero1">Número 1:</label>
+  <input type="number" step="any" id="numero1"><br><br>
+  <label for="numero2">Número 2:</label>
+  <input type="number" step="any" id="numero2"><br><br>
+  <label for="numero3">Número 3:</label>
+  <input type="number" step="any" id="numero3"><br><br>
+
+  <button onclick="calcular()">Calcular</button><br><br>
+
+  <p id="soma"></p>
+  <p id="subtracao"></p>
+  <p id="multiplicacao"></p>
+
+  <script>
+    function calcular() {
+      var num1 = parseFloat(document.getElementById("numero1").value);
+      var num2 = parseFloat(document.getElementById("numero2").value);
+      var num3 = parseFloat(document.getElementById("numero3").value);
+
+      var soma = num1 + num2 + num3;
+      var subtracao = num1 - num2 - num3;
+      var multiplicacao = num1 * num2 * num3;
+
+      document.getElementById("soma").innerHTML = "Soma: " + soma;
+      document.getElementById("subtracao").innerHTML = "Subtração: " + subtracao;
+      document.getElementById("multiplicacao").innerHTML = "Multiplicação: " + multiplicacao;
+    }
+  </script>
+</body>
+</html>
+
+
+8-questão
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Área e comprimento de uma circunferência</title>
+    </head>
+    <body>
+        <h1>Área e comprimento de uma circunferência</h1>
+        <form>
+            <label for="radius">Digite o raio da circunferência:</label>
+            <input type="number" step="0.01" id="radius" name="radius">
+            <input type="submit" value="Calcular" onclick="calculateValues()">
+        </form>
+
+        <p id="result"></p>
+
+        <script>
+            function calculateValues() {
+                let radius = parseFloat(document.getElementById('radius').value);
+                let area = Math.PI * Math.pow(radius, 2);
+                let circumference = 2 * Math.PI * radius;
+                document.getElementById('result').innerText = "Área: " + area + ", Comprimento: " + circumference;
+            }
+        </script>
+    </body>
+</html>
+
+9-questão
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Volume de Esfera</title>
+    <script>
+        function calcularVolume() {
+            // Obtém o valor do raio do input
+            var raio = document.getElementById("raio").value;
+
+            // Calcula o volume da esfera
+            var volume = (4/3) * Math.PI * Math.pow(raio, 3);
+
+            // Exibe o resultado
+            document.getElementById("resultado").innerHTML = "Volume da esfera: " + volume.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculadora de Volume de Esfera</h1>
+
+    <label for="raio">Digite o raio da esfera:</label>
+    <input type="number" id="raio" placeholder="Raio" required>
+    <button onclick="calcularVolume()">Calcular</button>
+
+    <p id="resultado"></p>
+</body>
+</html>
+
+10-questão
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Área de Trapézio</title>
+</head>
+<body>
+    <script>
+        // Função para calcular a área do trapézio
+        function calcularArea() {
+            // Obtém os valores da base maior, base menor e altura
+            var baseMaior = parseFloat(document.getElementById('baseMaior').value);
+            var baseMenor = parseFloat(document.getElementById('baseMenor').value);
+            var altura = parseFloat(document.getElementById('altura').value);
+
+            // Calcula a área do trapézio usando a fórmula: A = ((B + b) * h) / 2
+            var area = ((baseMaior + baseMenor) * altura) / 2;
+
+            // Exibe o resultado na página
+            document.getElementById('resultado').innerHTML = 'Área = ' + area.toFixed(3);
+        }
+    </script>
+
+    <h1>Calculadora de Área de Trapézio</h1>
+
+    <label for="baseMaior">Base Maior:</label>
+    <input type="number" id="baseMaior">
+
+    <label for="baseMenor">Base Menor:</label>
+    <input type="number" id="baseMenor">
+
+    <label for="altura">Altura:</label>
+    <input type="number" id="altura">
+
+    <button onclick="calcularArea()">Calcular Área</button>
+
+    <p id="resultado"></p>
+</body>
+</html>
+
+11-questão
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura</title>
+</head>
+<body>
+    <h2>Conversor de Temperatura</h2>
+
+    <label for="celsius">Temperatura em Celsius:</label>
+    <input type="text" id="celsius" placeholder="Digite a temperatura em Celsius">
+
+    <button onclick="converterTemperatura()">Converter</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function converterTemperatura() {
+            var celsius = document.getElementById('celsius').value;
+            var fahrenheit = (celsius * 9/5) + 32;
+            document.getElementById('resultado').innerHTML = 'Temperatura em Fahrenheit: ' + fahrenheit.toFixed(2);
+        }
+    </script>
+</body>
+</html>
+
+12-Questão
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura</title>
+</head>
+<body>
+
+    <h2>Conversor de Temperatura</h2>
+
+    <label for="fahrenheit">Temperatura em Fahrenheit:</label>
+    <input type="text" id="fahrenheit" placeholder="Digite a temperatura em Fahrenheit">
+
+    <button onclick="converterTemperatura()">Converter</button>
+
+    <h3>Resultado em Celsius:</h3>
+    <p id="resultado"></p>
+
+    <script>
+        function converterTemperatura() {
+            // Obtém o valor digitado em Fahrenheit
+            var temperaturaFahrenheit = parseFloat(document.getElementById("fahrenheit").value);
+
+            // Calcula a temperatura em Celsius usando a fórmula
+            var temperaturaCelsius = (temperaturaFahrenheit - 32) * 5 / 9;
+
+            // Exibe o resultado
+            document.getElementById("resultado").innerText = temperaturaCelsius.toFixed(3);
+        }
+    </script>
+
+</body>
+</html>
+
+
+13-Questão
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma dos Quadrados</title>
+    <script>
+        function calcularSomaDosQuadrados() {
+            // Obter os valores de A, B e C a partir dos elementos de input
+            var A = parseInt(document.getElementById("valorA").value);
+            var B = parseInt(document.getElementById("valorB").value);
+            var C = parseInt(document.getElementById("valorC").value);
+
+            // Calcular a soma dos quadrados
+            var somaDosQuadrados = A ** 2 + B ** 2 + C ** 2;
+
+            // Exibir o resultado na página
+            document.getElementById("resultado").innerText = "Soma = " + somaDosQuadrados;
+        }
+    </script>
+</head>
+<body>
+    <h1>Soma dos Quadrados</h1>
+
+    <label for="valorA">A:</label>
+    <input type="number" id="valorA" placeholder="Digite o valor de A">
+
+    <label for="valorB">B:</label>
+    <input type="number" id="valorB" placeholder="Digite o valor de B">
+
+    <label for="valorC">C:</label>
+    <input type="number" id="valorC" placeholder="Digite o valor de C">
+
+    <button onclick="calcularSomaDosQuadrados()">Calcular Soma dos Quadrados</button>
+
+    <p id="resultado"></p>
+</body>
+</html>
+
+
+14-Questão
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Quadrado da Soma</title>
+    <script>
+        function calcularQuadradoDaSoma() {
+            // Obtém os valores dos campos de entrada
+            var a = parseInt(document.getElementById('valorA').value);
+            var b = parseInt(document.getElementById('valorB').value);
+            var c = parseInt(document.getElementById('valorC').value);
+
+            // Calcula a soma dos quadrados
+            var somaQuadrados = Math.pow(a + b + c, 2);
+
+            // Exibe o resultado na div de saída
+            document.getElementById('resultado').innerHTML = 'Soma dos quadrados: ' + somaQuadrados;
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculadora Quadrado da Soma</h1>
+    
+    <!-- Campos de entrada -->
+    <label for="valorA">Valor A:</label>
+    <input type="text" id="valorA">
+
+    <label for="valorB">Valor B:</label>
+    <input type="text" id="valorB">
+
+    <label for="valorC">Valor C:</label>
+    <input type="text" id="valorC">
+
+    <!-- Botão para calcular -->
+    <button onclick="calcularQuadradoDaSoma()">Calcular</button>
+
+    <!-- Div para exibir o resultado -->
+    <div id="resultado"></div>
+</body>
+</html>
+
+Questão 15
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Consumo de Combustível</title>
+    <script>
+        function calcularConsumo() {
+            // Obtém os valores dos campos de entrada
+            var kmRodados = parseFloat(document.getElementById('kmRodados').value);
+            var litrosAbastecidos = parseFloat(document.getElementById('litrosAbastecidos').value);
+
+            // Calcula o consumo em km/l
+            var consumo = kmRodados / litrosAbastecidos;
+
+            // Exibe o resultado na div de saída
+            document.getElementById('resultado').innerHTML = 'Consumo: ' + consumo.toFixed(3) + ' km/l';
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculadora de Consumo de Combustível</h1>
+    
+    <!-- Campos de entrada -->
+    <label for="kmRodados">Quilômetros Rodados:</label>
+    <input type="text" id="kmRodados">
+
+    <label for="litrosAbastecidos">Litros Abastecidos:</label>
+    <input type="text" id="litrosAbastecidos">
+
+    <!-- Botão para calcular -->
+    <button onclick="calcularConsumo()">Calcular</button>
+
+    <!-- Div para exibir o resultado -->
+    <div id="resultado"></div>
+</body>
+</html>
+
